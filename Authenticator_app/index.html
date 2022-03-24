@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body{
+            background-image: url("https://c4.wallpaperflare.com/wallpaper/286/114/401/light-background-wallpaper-preview.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 200%;
+        }
+        #container{
+            display: flex;
+            justify-content: space-around;
+        }
+        #loginForm{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #registerForm{
+            display: flex;
+            flex-direction: column;
+        }
+        .k{
+            border: 2px solid rgb(190, 73, 73);
+            border-radius: 5px;
+            height: 30px;
+            width: 300px;
+            background-color: rgb(194, 243, 227);
+            font-size: 15px;
+        }
+        .sub{
+            height: 35px;
+            width: 305px; 
+            border: 2px solid rgb(190, 73, 73);
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            font-size: 15px;
+        }
+        .sub:hover{
+            font-size: 25px;
+        }
+        h1{
+            color: rgb(18, 59, 8);
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1>Signup</h1>
+            <form id="registerForm">
+                <input class="k" type="text" name="name_input" placeholder="Enter Name"/>
+                <br/>
+                <input class="k" type="email" name="email_input" placeholder="Enter Email"/>
+                <br/>
+                <input class="k" type="password" name="password_input" placeholder="Enter Password"/>
+                <br/>
+                <input class="k"  type="text" name="username_input" placeholder="Enter username"/>
+                <br/>
+                <input class="k" type="number" name="mobile_input" placeholder="Enter Ph.no"/>
+                <br/>
+                <textarea class="k" name="description_input" placeholder="Enter Address"></textarea>
+                </br>
+                <input class="sub" type="submit" value="Sign Up"/>
+            </form>
+        </div>
+        <div>
+            <h1>Login</h1>
+            <form id="loginForm">
+                <input class="k" type="text" name="username_input" placeholder="Enter Username"/>
+                <br>
+                <input class="k" type="password" name="password_input" placeholder="Enter password"/>
+                <br>
+                <input class="sub" type="submit" value="Login"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
